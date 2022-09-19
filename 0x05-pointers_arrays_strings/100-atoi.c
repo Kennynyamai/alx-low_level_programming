@@ -32,12 +32,12 @@ int _atoi(char *s)
 	}
 		idx++;
 
-		for (num = idx - size; num < idx; num++)
-		{
-			p += ((s[num] - 48) * mul);
-			mul /= 10;
-		}
-		
-		return (p * sign);
+	for (num = idx - size; num < idx; num++)
+	{
+		p += ((s[num] - 48) * mul);
+		mul /= 10;
+	}
+
+	return (p * sign);
 }
 
